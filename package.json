@@ -1,0 +1,16 @@
+{
+	"name": "apriliandi.xyz",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "cd web && sergey",
+		"dev": "cd web && sergey --watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"sergey": "0.0.13"
+	}
+}
