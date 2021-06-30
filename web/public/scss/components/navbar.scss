@@ -1,0 +1,45 @@
+@use "../base/typography" as font;
+@use "../abstract/variables" as color;
+
+.navbar {
+	display: flex;
+	grid-column: 3/8;
+	margin-bottom: 80px;
+	align-items: center;
+	justify-content: space-between;
+
+	&__brand {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		justify-content: center;
+	}
+
+	&__menus {
+		display: flex;
+		align-items: center;
+	}
+
+	&__menu {
+		margin-right: 32px;
+		text-decoration: none;
+		letter-spacing: 1.5px;
+		transition: color 0.1s;
+		color: color.$primary-text-color;
+		font: 500 16px font.$font-family;
+	}
+
+	&__menu--active {
+		font-weight: bold;
+		color: color.$hover-color;
+		border-bottom: 2px solid color.$hover-color;
+	}
+
+	&__menu:hover {
+		color: color.$hover-color;
+	}
+
+	&__menu:last-child {
+		margin-right: 0;
+	}
+}

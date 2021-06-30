@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Blogs</title>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar">
+	<a href="./index.html" class="navbar__brand">
+		<img width="60px" height="60px" src="./assets/logo.svg" alt="" />
+	</a>
+
+	<div class="navbar__menus">
+		<a id="navbar-home" href="./index.html" class="navbar__menu"> Home </a>
+		<a href="./about.html" class="navbar__menu" id="navbar-about">About</a>
+		<a href="./blogs.html" class="navbar__menu" id="navbar-blogs">Blogs</a>
+		<a href="./contact.html" class="navbar__menu" id="navbar-contact">
+			Contact
+		</a>
+	</div>
+</nav>
+
+
+			<h1 class="head-title">Blogs</h1>
+
+			<div class="blogs">
+				<div class="blog">
+					<span class="blog__date">2021-03-01</span>
+
+					<h1 class="blog__title">My first Vscode extension</h1>
+
+					<p class="blog__desc">
+						We know that Vscode is the most popular text editor for programmers.
+						A lot of features we can use in Vscode and one of my favorite
+						features is Vscode extensions....
+					</p>
+
+					<a href="#" class="blog__blog-link">Read more...</a>
+				</div>
+
+				<div class="blog">
+					<span class="blog__date">2021-02-28</span>
+
+					<h1 class="blog__title">What I think about Svelte</h1>
+
+					<p class="blog__desc">
+						We know that the growing of Javascript is very fast. Maybe today you
+						learn some Javascript framework, but maybe next month or even next
+						day will come out another framework (ahhh sh*t here we go again). I
+						think we as a Javascript developer have a lot of option to choose
+						some tools that useful for us....
+					</p>
+
+					<a href="#" class="blog__blog-link">Read more...</a>
+				</div>
+
+				<div class="blog">
+					<span class="blog__date">2021-02-25</span>
+
+					<h1 class="blog__title">The phenomenon of "SHOULD I LEARN"</h1>
+
+					<p class="blog__desc">
+						Maybe you think with this blog title, "WHAT'S WRONG WITH THIS
+						PHENOMENON". Yes, that's not wrong but many people do this
+						phenomenon all the time. For example....
+					</p>
+
+					<a href="#" class="blog__blog-link">Read more...</a>
+				</div>
+			</div>
+
+			<footer class="footer mt-footer">
+	<div class="footer__description">
+		<p class="footer__design-by-wrapper">
+			UI Design by
+			<a target="_blank" href="https://rw.codes" class="footer__design-by">
+				Ryan Warner.
+			</a>
+		</p>
+
+		<div class="footer__tech">
+			Built with <span class="framework">no framework</span>. Hosted on
+			<span class="hosted">Netlify</span>.
+		</div>
+	</div>
+
+	<div class="footer__social-media">
+		<a
+			target="_blank"
+			class="footer__social-media-wrapper"
+			href="https://twitter.com/calon_jenazah__"
+		>
+			<img src="./assets/Twitter.svg" alt="" />
+		</a>
+
+		<a
+			target="_blank"
+			class="footer__social-media-wrapper"
+			href="https://github.com/apriliandi246"
+		>
+			<img src="./assets/GitHub.svg" alt="" />
+		</a>
+	</div>
+</footer>
+
+			<script>
+	const currentRoute = location.pathname;
+	const classActiveMenu = "navbar__menu--active";
+
+	if (currentRoute === "/index.html" || currentRoute === "/") {
+		document.getElementById("navbar-home").classList.add(classActiveMenu);
+	}
+
+	if (currentRoute === "/about.html") {
+		document.getElementById("navbar-about").classList.add(classActiveMenu);
+	}
+
+	if (currentRoute === "/blogs.html") {
+		document.getElementById("navbar-blogs").classList.add(classActiveMenu);
+	}
+
+	if (currentRoute === "/contact.html") {
+		document.getElementById("navbar-contact").classList.add(classActiveMenu);
+	}
+</script>
+
+		</div>
+	</body>
+</html>
