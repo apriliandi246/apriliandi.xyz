@@ -1,9 +1,0 @@
-@use "../base/typography" as font;
-@use "../abstract/variables" as color;
-
-.about__description {
-	grid-column: 3/8;
-	margin-bottom: 30px;
-	color: color.$primary-text-color;
-	font: 400 18px font.$font-family;
-}
