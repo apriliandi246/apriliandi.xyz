@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<title>My First Vscode Extension</title>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar">
+				<a href="../index.html" class="navbar__brand">
+					<img
+						width="60px"
+						height="60px"
+						alt="Farhan Apriliandi"
+						src="../assets/logo.svg"
+					/>
+				</a>
+
+				<div class="navbar__menus">
+					<a id="navbar-home" href="../index.html" class="navbar__menu">
+						Home
+					</a>
+					<a href="../about.html" class="navbar__menu" id="navbar-about"
+						>About</a
+					>
+					<a href="../blogs.html" class="navbar__menu" id="navbar-blogs"
+						>Blogs</a
+					>
+					<a href="../contact.html" class="navbar__menu" id="navbar-contact">
+						Contact
+					</a>
+				</div>
+			</nav>
+
+			<h1 class="head-title">My First Vscode Extension</h1>
+
+			<p class="blog-words">
+				We know that Vscode is the most popular text editor for programmers. A
+				lot of features we can use in Vscode and one of my favorite features is
+				Vscode extensions. We can use useful extensions for our productivity
+				like code formatted, linter, syntax highlighting and more.
+			</p>
+
+			<p class="blog-words">
+				But, why not try to make our Vscode extension to solve our problem.
+				Yeah, a couple of months ago I published my first Vscode extensions.
+				It's just a simple extension but it solves my problem. Basically, my
+				problem is when I write CSS code and after that, I read the code, but
+				I'm more comfortable when the CSS properties are sorted, it makes me
+				enjoy especially when I read the code.
+			</p>
+
+			<h1 class="blog-sub-title">Before :</h1>
+
+			<pre>
+				<code>
+.component {
+   white-space: pre-line;
+   display: block;
+   resize: none;
+   font-family: monospace;
+   width: 100%;
+   padding: 15px;
+   border: 1px solid #38444d;
+   font-size: 18px;
+   outline: none;
+   transition: background-color 0.2s;
+   box-sizing: border-box;
+   background-color: #253341;
+   margin-top: 17px;
+   color: #f5f5f5;
+}
+				</code>
+			</pre>
+
+			<h1 class="blog-sub-title">Smaller to Bigger :</h1>
+
+			<pre>
+				<code>
+.component {
+   width: 100%;
+   resize: none;
+   padding: 15px;
+   outline: none;
+   display: block;
+   color: #f5f5f5;
+   font-size: 18px;
+   margin-top: 17px;
+   white-space: pre-line;
+   font-family: monospace;
+   box-sizing: border-box;
+   border: 1px solid #38444d;
+   background-color: #253341;
+   transition: background-color 0.2s;
+}
+				</code>
+			</pre>
+
+			<p class="blog-words">
+				Before I create the extension, I have to manually sort all of the
+				properties. And after that, I build a web application to handle this.
+				But I'm so lazy to switch from the text editor to the browser and come
+				back again to the text editor. That is why I build this extension.
+			</p>
+
+			<p class="blog-words">
+				You can check the code in my Github repository (<a
+					rel="noopener"
+					target="_blank"
+					class="blog-link"
+					href="https://github.com/apriliandi246/CSS-sort"
+					>the web version</a
+				>
+				or
+				<a
+					rel="noopener"
+					target="_blank"
+					class="blog-link"
+					href="https://github.com/apriliandi246/vscode-css-sort"
+					>the Vscode extension version</a
+				>). And you can see all my solutions for sorting CSS properties from
+				this repository.
+			</p>
+
+			<sergey-import src="footer" />
+		</div>
+	</body>
+</html>
