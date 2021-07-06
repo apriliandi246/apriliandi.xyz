@@ -2,8 +2,6 @@
 @use "../abstract/variables" as color;
 
 .contact {
-	grid-column: 3/8;
-
 	&__list {
 		list-style: disc;
 		margin-left: 20px;
