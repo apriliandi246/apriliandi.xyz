@@ -2,14 +2,14 @@
 @use "../abstract/variables" as color;
 
 .blog-words {
-	grid-column: 3/7;
+	grid-column: 3/8;
 	margin-bottom: 30px;
 	color: color.$primary-text-color;
 	font: 400 19px/30px font.$font-family;
 }
 
 .blog-sub-title {
-	grid-column: 3/7;
+	grid-column: 3/8;
 	margin-bottom: 20px;
 	color: color.$primary-text-color;
 	font: 500 24px font.$font-family;
@@ -24,7 +24,7 @@
 }
 
 pre {
-	grid-column: 3/7;
+	grid-column: 3/8;
 	padding-left: 28px;
 	padding-right: 28px;
 	margin-bottom: 60px;

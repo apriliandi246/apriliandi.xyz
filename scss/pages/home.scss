@@ -2,7 +2,7 @@
 @use "../abstract/variables" as color;
 
 .jumbotron {
-	grid-column: 3/7;
+	grid-column: 3/8;
 	margin-bottom: 106px;
 
 	&__headline {
@@ -19,7 +19,7 @@
 }
 
 .latest-blog {
-	grid-column: 3/7;
+	grid-column: 3/8;
 	margin-bottom: 100px;
 
 	&__title {

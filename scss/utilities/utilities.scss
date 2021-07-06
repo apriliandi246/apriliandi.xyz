@@ -1,9 +1,13 @@
 @use "../base/typography" as font;
 @use "../abstract/variables" as color;
 
+.mt-20 {
+	margin-top: 20px;
+}
+
 .head-title {
 	grid-column: 3/7;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	color: color.$primary-text-color;
 	font: 700 48px font.$font-family;
 }
