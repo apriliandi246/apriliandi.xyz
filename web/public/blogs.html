@@ -83,7 +83,7 @@
 
 					<a
 						class="blog__blog-link"
-						href="./blogs/the-phenomena-of-should-i-learn.html"
+						href="./blogs/the-phenomenon-of-should-i-learn.html"
 					>
 						Read more...
 					</a>
@@ -158,7 +158,7 @@
 		document.getElementById("navbar-about").classList.add(classActiveMenu);
 	}
 
-	if (currentRoute === "/blogs.html") {
+	if (currentRoute === "/blogs.html" || currentRoute.match(/blogs/) !== null) {
 		document.getElementById("navbar-blogs").classList.add(classActiveMenu);
 	}
 

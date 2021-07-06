@@ -16,12 +16,12 @@
 	}
 
 	&__menus {
+		gap: 40px;
 		display: flex;
 		align-items: center;
 	}
 
 	&__menu {
-		margin-right: 32px;
 		text-decoration: none;
 		letter-spacing: 1.5px;
 		transition: color 0.1s;
@@ -41,5 +41,13 @@
 
 	&__menu:last-child {
 		margin-right: 0;
+	}
+
+	@media screen and (max-width: 400px) {
+		flex-direction: column;
+
+		&__brand {
+			margin-bottom: 28px;
+		}
 	}
 }

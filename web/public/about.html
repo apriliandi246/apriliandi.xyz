@@ -38,7 +38,7 @@
 				beautiful UI and easy to maintain....
 			</p>
 
-			<h1 class="head-title mt-20">Skillset ( web development )</h1>
+			<h1 class="head-title mt-50">Skillset ( web development )</h1>
 
 			<p class="about__description">
 				Some of the technologies that I am familiar with....
@@ -156,7 +156,7 @@
 				</li>
 			</ul>
 
-			<h1 class="head-title mt-20">Get in touch</h1>
+			<h1 class="head-title mt-50">Get in touch</h1>
 
 			<ul class="contact">
 				<li class="contact__list">
@@ -273,7 +273,7 @@
 		document.getElementById("navbar-about").classList.add(classActiveMenu);
 	}
 
-	if (currentRoute === "/blogs.html") {
+	if (currentRoute === "/blogs.html" || currentRoute.match(/blogs/) !== null) {
 		document.getElementById("navbar-blogs").classList.add(classActiveMenu);
 	}
 

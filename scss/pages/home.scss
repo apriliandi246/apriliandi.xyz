@@ -14,7 +14,7 @@
 
 	&__desc {
 		color: color.$primary-text-color;
-		font: 400 18px/32px font.$font-family;
+		font: 400 24px/32px font.$font-family;
 	}
 }
 
@@ -120,10 +120,14 @@
 	}
 }
 
-.project-lg {
-	grid-column: span 6;
-}
-
 .project-sm {
 	grid-column: span 3;
+
+	@media screen and (max-width: 730px) {
+		grid-column: span 6;
+	}
+}
+
+.project-lg {
+	grid-column: span 6;
 }

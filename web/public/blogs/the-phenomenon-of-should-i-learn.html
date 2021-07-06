@@ -135,5 +135,27 @@
 </footer>
 
 		</div>
+
+		<script>
+	const currentRoute = location.pathname;
+	const classActiveMenu = "navbar__menu--active";
+
+	if (currentRoute === "/index.html" || currentRoute === "/") {
+		document.getElementById("navbar-home").classList.add(classActiveMenu);
+	}
+
+	if (currentRoute === "/about.html") {
+		document.getElementById("navbar-about").classList.add(classActiveMenu);
+	}
+
+	if (currentRoute === "/blogs.html" || currentRoute.match(/blogs/) !== null) {
+		document.getElementById("navbar-blogs").classList.add(classActiveMenu);
+	}
+
+	if (currentRoute === "/contact.html") {
+		document.getElementById("navbar-contact").classList.add(classActiveMenu);
+	}
+</script>
+
 	</body>
 </html>

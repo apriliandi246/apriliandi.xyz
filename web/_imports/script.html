@@ -10,7 +10,7 @@
 		document.getElementById("navbar-about").classList.add(classActiveMenu);
 	}
 
-	if (currentRoute === "/blogs.html") {
+	if (currentRoute === "/blogs.html" || currentRoute.match(/blogs/) !== null) {
 		document.getElementById("navbar-blogs").classList.add(classActiveMenu);
 	}
 

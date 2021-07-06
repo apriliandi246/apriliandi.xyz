@@ -40,4 +40,17 @@
 	&__social-media-wrapper {
 		text-decoration: none;
 	}
+
+	@media screen and (max-width: 599px) {
+		flex-direction: column-reverse;
+
+		&__social-media {
+			margin-bottom: 30px;
+		}
+
+		&__tech,
+		&__design-by-wrapper {
+			text-align: center;
+		}
+	}
 }
