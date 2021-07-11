@@ -4,13 +4,23 @@
 .blog-words {
 	margin-bottom: 30px;
 	color: color.$primary-text-color;
-	font: 400 19px/30px font.$font-family;
+	font: 400 19px/32px font.$font-family;
+
+	@media screen and (max-width: 905px) {
+		font-size: 16px;
+		line-height: 26px;
+	}
 }
 
 .blog-sub-title {
 	margin-bottom: 20px;
 	color: color.$primary-text-color;
 	font: 500 24px font.$font-family;
+
+	@media screen and (max-width: 905px) {
+		font-size: 18px;
+		line-height: 26px;
+	}
 }
 
 .blog-link {
@@ -22,6 +32,7 @@
 }
 
 pre {
+	overflow-x: auto;
 	padding-left: 28px;
 	padding-right: 28px;
 	margin-bottom: 60px;
@@ -30,10 +41,21 @@ pre {
 	border: 2px solid #8892b0;
 	background-color: #1c2c35;
 	box-shadow: 11px 11px 1px 1px rgb(136, 146, 176);
+
+	@media screen and (max-width: 628px) {
+		box-shadow: none;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 code {
 	white-space: pre-wrap;
 	font: 400 18px/29px monospace;
 	color: color.$primary-text-color;
+
+	@media screen and (max-width: 905px) {
+		font-size: 16px;
+		line-height: 26px;
+	}
 }

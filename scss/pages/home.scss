@@ -7,13 +7,24 @@
 	&__headline {
 		color: #b0fbbc;
 		margin-bottom: 42px;
-		font: 700 48px/68px font.$font-family;
+		font: 700 48px/44px font.$font-family;
 		text-shadow: 0px 0px 76px rgba(188, 251, 195, 0.3);
 	}
 
 	&__desc {
 		color: color.$primary-text-color;
-		font: 400 24px/32px font.$font-family;
+		font: 400 italic 22px/32px font.$font-family;
+	}
+
+	@media screen and (max-width: 905px) {
+		&__headline {
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+
+		&__desc {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -23,7 +34,7 @@
 	&__title {
 		margin-bottom: 36px;
 		color: color.$primary-text-color;
-		font: 700 24px font.$font-family;
+		font: 700 24px/38px font.$font-family;
 	}
 
 	&__list {
@@ -31,7 +42,7 @@
 	}
 
 	&__link {
-		margin-bottom: 6px;
+		margin-bottom: 12px;
 		display: inline-block;
 		text-decoration: none;
 		transition: color 0.1s;
@@ -93,10 +104,11 @@
 	&__description {
 		margin-bottom: 46px;
 		color: color.$primary-text-color;
-		font: 400 16px font.$font-family;
+		font: 400 16px/26px font.$font-family;
 	}
 
 	&__repository-link {
+		font-size: 16px;
 		padding: 6px 32px;
 	}
 
@@ -114,6 +126,13 @@
 
 	&__more svg {
 		margin-right: 12px;
+	}
+
+	@media screen and (max-width: 905px) {
+		&__more {
+			font-size: 16px;
+			line-height: 26px;
+		}
 	}
 }
 

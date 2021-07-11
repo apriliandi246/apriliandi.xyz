@@ -13,7 +13,7 @@
 	}
 
 	&__design-by-wrapper {
-		margin-bottom: 8px;
+		margin-bottom: 6px;
 		color: color.$primary-text-color;
 		font: 400 18px font.$font-family;
 	}
@@ -38,6 +38,14 @@
 
 	&__social-media-wrapper {
 		text-decoration: none;
+	}
+
+	@media screen and (max-width: 905px) {
+		&__tech,
+		&__design-by-wrapper {
+			font-size: 16px;
+			line-height: 26px;
+		}
 	}
 
 	@media screen and (max-width: 599px) {

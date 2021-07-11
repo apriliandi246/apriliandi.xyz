@@ -4,5 +4,10 @@
 .about__description {
 	margin-bottom: 30px;
 	color: color.$primary-text-color;
-	font: 400 18px font.$font-family;
+	font: 400 18px/28px font.$font-family;
+
+	@media screen and (max-width: 905px) {
+		font-size: 16px;
+		line-height: 26px;
+	}
 }

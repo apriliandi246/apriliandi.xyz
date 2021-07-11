@@ -7,7 +7,7 @@
 		margin-left: 20px;
 		margin-bottom: 20px;
 		color: color.$primary-text-color;
-		font: 400 18px font.$font-family;
+		font: 400 18px/28px font.$font-family;
 	}
 
 	&__link {
@@ -19,5 +19,12 @@
 
 	&__link:hover {
 		text-decoration: underline;
+	}
+
+	@media screen and (max-width: 905px) {
+		&__list {
+			font-size: 16px;
+			line-height: 26px;
+		}
 	}
 }
