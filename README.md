@@ -1,4 +1,4 @@
-<h1 align="center">👀 apriliandi.xyz</h1>
+<h1>👀 apriliandi.xyz</h1>
 
 <br>
 
@@ -37,5 +37,4 @@ I've installed `SASS` globally and I don't need to install it again for this pro
 - `public` - For production.
 
 <br>
-<h3 align="center">(⌐■_■)</h3>
-<br>
+<h3 align="right">(⌐■_■)</h3>
