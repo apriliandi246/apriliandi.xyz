@@ -1,20 +1,18 @@
 <script defer>
 	const currentRoute = location.pathname;
-	const classActiveMenu = "navbar__menu--active";
 
 	if (currentRoute === "/" || currentRoute === "/") {
-		document.getElementById("navbar-home").classList.add(classActiveMenu);
+		const navbarHome = document.getElementById("navbar-home");
+		navbarHome.classList.add("navbar__menu--active");
 	}
 
 	if (currentRoute === "/about/") {
-		document.getElementById("navbar-about").classList.add(classActiveMenu);
+		const navbarAbout = document.getElementById("navbar-about");
+		navbarAbout.classList.add("navbar__menu--active");
 	}
 
-	if (currentRoute === "/blogs/" || currentRoute.match(/blogs/) !== null) {
-		document.getElementById("navbar-blogs").classList.add(classActiveMenu);
-	}
-
-	if (currentRoute === "/blog/" || currentRoute.match(/blog/) !== null) {
-		document.getElementById("navbar-blogs").classList.add(classActiveMenu);
+	if (currentRoute === "/blogs/" || currentRoute.match(/blogs/) !== null || currentRoute === "/blog/" || currentRoute.match(/blog/) !== null) {
+		const navbarBlogs = document.getElementById("navbar-blogs");
+		navbarBlogs.classList.add("navbar__menu--active");
 	}
 </script>

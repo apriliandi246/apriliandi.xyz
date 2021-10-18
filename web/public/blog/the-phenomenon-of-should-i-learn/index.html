@@ -13,7 +13,7 @@
 	<div class="container">
 		<nav class="navbar">
 	<div class="navbar__menus">
-		<a id="navbar-home" href="/" class="navbar__menu"> Home </a>
+		<a id="navbar-home" href="/" class="navbar__menu">Home</a>
 		<a href="../../about" class="navbar__menu" id="navbar-about">About</a>
 		<a href="../../blogs" class="navbar__menu" id="navbar-blogs">Blogs</a>
 	</div>
@@ -69,7 +69,11 @@
 	<div class="footer__description">
 		<p class="footer__design-by-wrapper">
 			UI Design by
-			<a target="_blank" href="https://rw.codes" class="footer__design-by">
+			<a
+				rel="noopener"
+				target="_blank"
+				href="https://rw.codes"
+				class="footer__design-by">
 				Ryan Warner.
 			</a>
 		</p>
@@ -82,17 +86,14 @@
 
 	<div class="footer__social-media">
 		<a
+			rel="noopener"
 			target="_blank"
+			aria-label="My Github"
 			class="footer__social-media-wrapper"
 			href="https://github.com/apriliandi246">
-			<svg
-				fill="none"
-				width="25px"
-				height="25px"
-				viewBox="0 0 19 18"
-				xmlns="http://www.w3.org/2000/svg">
+			<svg width="25px" height="25px" fill="none" viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg">
 				<path
-					d="M9.22851 0C4.12976 0 0 4.13206 0 9.22851C0 13.3067 2.64397 16.7651 6.30999 17.9841C6.77142 18.071 6.94061 17.7856 6.94061 17.5403C6.94061 17.3211 6.93292 16.7405 6.92907 15.9715C4.36201 16.5283 3.8206 14.7333 3.8206 14.7333C3.40071 13.6682 2.79393 13.3836 2.79393 13.3836C1.95798 12.8115 2.85853 12.823 2.85853 12.823C3.78523 12.8876 4.27203 13.7735 4.27203 13.7735C5.09491 15.1847 6.43227 14.7771 6.95983 14.5411C7.04289 13.9443 7.28053 13.5375 7.54431 13.3067C5.49481 13.076 3.34072 12.2824 3.34072 8.74632C3.34072 7.73887 3.69833 6.916 4.29049 6.27C4.18667 6.03698 3.8752 5.09875 4.37124 3.82752C4.37124 3.82752 5.14412 3.57989 6.90908 4.77345C7.64736 4.56811 8.43178 4.4666 9.2162 4.46198C10.0006 4.4666 10.7851 4.56811 11.5233 4.77345C13.2767 3.57989 14.0496 3.82752 14.0496 3.82752C14.5457 5.09875 14.2342 6.03698 14.1419 6.27C14.7302 6.916 15.0878 7.73887 15.0878 8.74632C15.0878 12.2916 12.9307 13.0722 10.8773 13.299C11.2003 13.5759 11.5003 14.1419 11.5003 15.0063C11.5003 16.2414 11.4887 17.2335 11.4887 17.5334C11.4887 17.7756 11.6502 18.064 12.1232 17.9718C15.8154 16.7613 18.457 13.3006 18.457 9.22851C18.457 4.13206 14.325 0 9.22851 0Z"
+					d="m9.2285 0c-5.0988 0-9.2285 4.1321-9.2285 9.2285 0 4.0782 2.644 7.5366 6.31 8.7556 0.46143 0.0869 0.63062-0.1985 0.63062-0.4438 0-0.2192-0.00769-0.7998-0.01154-1.5688-2.5671 0.5568-3.1085-1.2382-3.1085-1.2382-0.41989-1.0651-1.0267-1.3497-1.0267-1.3497-0.83595-0.5721 0.0646-0.5606 0.0646-0.5606 0.9267 0.0646 1.4135 0.9505 1.4135 0.9505 0.82288 1.4112 2.1602 1.0036 2.6878 0.7676 0.08306-0.5968 0.3207-1.0036 0.58448-1.2344-2.0495-0.2307-4.2036-1.0243-4.2036-4.5604 0-1.0074 0.35761-1.8303 0.94977-2.4763-0.10382-0.23302-0.41529-1.1712 0.08075-2.4425 0 0 0.77288-0.24763 2.5378 0.94593 0.73828-0.20534 1.5227-0.30685 2.3071-0.31147 0.7844 0.00462 1.5689 0.10613 2.3071 0.31147 1.7534-1.1936 2.5263-0.94593 2.5263-0.94593 0.4961 1.2712 0.1846 2.2095 0.0923 2.4425 0.5883 0.646 0.9459 1.4689 0.9459 2.4763 0 3.5453-2.1571 4.3259-4.2105 4.5527 0.323 0.2769 0.623 0.8429 0.623 1.7073 0 1.2351-0.0116 2.2272-0.0116 2.5271 0 0.2422 0.1615 0.5306 0.6345 0.4384 3.6922-1.2105 6.3338-4.6712 6.3338-8.7433 0-5.0964-4.132-9.2285-9.2285-9.2285z"
 					fill="#ECF8FF" />
 			</svg>
 		</a>
@@ -102,22 +103,20 @@
 
 	<script defer>
 	const currentRoute = location.pathname;
-	const classActiveMenu = "navbar__menu--active";
 
 	if (currentRoute === "/" || currentRoute === "/") {
-		document.getElementById("navbar-home").classList.add(classActiveMenu);
+		const navbarHome = document.getElementById("navbar-home");
+		navbarHome.classList.add("navbar__menu--active");
 	}
 
 	if (currentRoute === "/about/") {
-		document.getElementById("navbar-about").classList.add(classActiveMenu);
+		const navbarAbout = document.getElementById("navbar-about");
+		navbarAbout.classList.add("navbar__menu--active");
 	}
 
-	if (currentRoute === "/blogs/" || currentRoute.match(/blogs/) !== null) {
-		document.getElementById("navbar-blogs").classList.add(classActiveMenu);
-	}
-
-	if (currentRoute === "/blog/" || currentRoute.match(/blog/) !== null) {
-		document.getElementById("navbar-blogs").classList.add(classActiveMenu);
+	if (currentRoute === "/blogs/" || currentRoute.match(/blogs/) !== null || currentRoute === "/blog/" || currentRoute.match(/blog/) !== null) {
+		const navbarBlogs = document.getElementById("navbar-blogs");
+		navbarBlogs.classList.add("navbar__menu--active");
 	}
 </script>
 </body>
