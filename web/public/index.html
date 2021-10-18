@@ -12,22 +12,12 @@
 <body>
 	<div class="container">
 		<nav class="navbar">
-	<a href="./index.html" class="navbar__brand">
-		<img
-			width="60px"
-			height="60px"
-			src="./assets/logo.svg"
-			alt="Farhan Apriliandi"
-		/>
-	</a>
-
-	<div class="navbar__menus">
-		<a id="navbar-home" href="./index.html" class="navbar__menu"> Home </a>
-		<a href="./about.html" class="navbar__menu" id="navbar-about">About</a>
-		<a href="./blogs.html" class="navbar__menu" id="navbar-blogs">Blogs</a>
-	</div>
-</nav>
-
+			<div class="navbar__menus">
+				<a id="navbar-home" href="/" class="navbar__menu"> Home </a>
+				<a href="./about" class="navbar__menu" id="navbar-about">About</a>
+				<a href="./blogs" class="navbar__menu" id="navbar-blogs">Blogs</a>
+			</div>
+		</nav>
 
 		<div class="jumbotron">
 			<h1 class="jumbotron__headline">👀 I'am Farhan Apriliandi.</h1>
@@ -44,7 +34,7 @@
 			<div class="latest-blog__list">
 				<a
 					class="latest-blog__link"
-					href="./blogs/my-first-vscode-extension.html">
+					href="./blog/my-first-vscode-extension/">
 					My first Vscode extension
 				</a>
 
@@ -54,7 +44,7 @@
 			<div class="latest-blog__list">
 				<a
 					class="latest-blog__link"
-					href="./blogs/what-i-think-about-svelte.html">
+					href="./blog/what-i-think-about-svelte/">
 					What I think about Svelte
 				</a>
 
@@ -64,208 +54,80 @@
 			<div class="latest-blog__list">
 				<a
 					class="latest-blog__link"
-					href="./blogs/the-phenomenon-of-should-i-learn.html">
+					href="./blog/the-phenomenon-of-should-i-learn/">
 					The phenomenon of "SHOULD I LEARN"
 				</a>
 
 				<span class="latest-blog__date">2021-02-25</span>
 			</div>
 
-			<a href="./blogs.html" class="latest-blog__all">
+			<a href="./blogs/" class="latest-blog__all">
 				All blogs
-				<svg
-					width="18"
-					height="18"
-					fill="none"
-					viewBox="0 0 18 18"
-					class="latest-blog__all-icon"
+				<svg width="18" height="18" class="latest-blog__all-icon" viewBox="0 0 18 18"
 					xmlns="http://www.w3.org/2000/svg">
 					<path
-						fill-rule="evenodd"
-						clip-rule="evenodd"
-						d="M9.21967 4.71967C9.51256 4.42678 9.98744 4.42678 10.2803 4.71967L14.0303 8.46967C14.3232 8.76256 14.3232 9.23744 14.0303 9.53033L10.2803 13.2803C9.98744 13.5732 9.51256 13.5732 9.21967 13.2803C8.92678 12.9874 8.92678 12.5126 9.21967 12.2197L12.4393 9L9.21967 5.78033C8.92678 5.48744 8.92678 5.01256 9.21967 4.71967Z"
-						fill="#7CC9FF"
-						fill-opacity="0.41" />
+						d="m9.2197 4.7197c0.29289-0.29289 0.76777-0.29289 1.0606 0l3.75 3.75c0.2929 0.29289 0.2929 0.76777 0 1.0607l-3.75 3.75c-0.29286 0.2929-0.76774 0.2929-1.0606 0s-0.29289-0.7677 0-1.0606l3.2196-3.2197-3.2196-3.2197c-0.29289-0.29289-0.29289-0.76777 0-1.0607z"
+						clip-rule="evenodd" fill="#7CC9FF" fill-opacity=".41" fill-rule="evenodd" />
 					<path
-						fill-rule="evenodd"
-						clip-rule="evenodd"
-						d="M3.96967 4.71967C4.26256 4.42678 4.73744 4.42678 5.03033 4.71967L8.78033 8.46967C9.07322 8.76256 9.07322 9.23744 8.78033 9.53033L5.03033 13.2803C4.73744 13.5732 4.26256 13.5732 3.96967 13.2803C3.67678 12.9874 3.67678 12.5126 3.96967 12.2197L7.18934 9L3.96967 5.78033C3.67678 5.48744 3.67678 5.01256 3.96967 4.71967Z"
-						fill="#7CC9FF"
-						fill-opacity="0.41" />
+						d="m3.9697 4.7197c0.29289-0.29289 0.76777-0.29289 1.0607 0l3.75 3.75c0.29289 0.29289 0.29289 0.76777 0 1.0607l-3.75 3.75c-0.29289 0.2929-0.76777 0.2929-1.0607 0s-0.29289-0.7677 0-1.0606l3.2197-3.2197-3.2197-3.2197c-0.29289-0.29289-0.29289-0.76777 0-1.0607z"
+						clip-rule="evenodd" fill="#7CC9FF" fill-opacity=".41" fill-rule="evenodd" />
 				</svg>
-			</a>
-		</div>
-
-		<div class="projects">
-			<h1 class="projects__title">Projects</h1>
-
-			<div class="project project-lg project-border-danger">
-				<h1 class="project__name">vscode-css-sort</h1>
-				<p class="project__description">
-					📶 Vscode extension to sort your CSS properties, and make them easy
-					to read....
-				</p>
-
-				<a
-					target="_blank"
-					class="project__repository-link btn"
-					href="https://github.com/apriliandi246/vscode-css-sort">
-					Repository
-				</a>
-			</div>
-
-			<div class="project project-sm project-border-primary">
-				<h1 class="project__name">my-STYLE</h1>
-				<p class="project__description">
-					💅 My default component UI for my personal project (on progress)
-					....
-				</p>
-
-				<a
-					target="_blank"
-					class="project__repository-link btn"
-					href="https://github.com/apriliandi246/my-STYLE">
-					Repository
-				</a>
-			</div>
-
-			<div class="project project-sm project-border-secondary">
-				<h1 class="project__name">Pilih</h1>
-				<p class="project__description">
-					📢 Web app for make vote with easy way .....
-				</p>
-
-				<a
-					target="_blank"
-					class="project__repository-link btn"
-					href="https://github.com/apriliandi246/pilih">
-					Repository
-				</a>
-			</div>
-
-			<div class="project project-sm project-border-yellow">
-				<h1 class="project__name">svelte-social-media</h1>
-				<p class="project__description">
-					👥 Social media app built with Svelte ....
-				</p>
-
-				<a
-					target="_blank"
-					class="project__repository-link btn"
-					href="https://github.com/apriliandi246/svelte-social-media">
-					Repository
-				</a>
-			</div>
-
-			<div class="project project-sm project-border-info">
-				<h1 class="project__name">quran</h1>
-				<p class="project__description">
-					🕌 Web app for reading or listen Quran ...
-				</p>
-
-				<a
-					target="_blank"
-					class="project__repository-link btn"
-					href="https://github.com/apriliandi246/quran">
-					Repository
-				</a>
-			</div>
-
-			<a
-				target="_blank"
-				class="project__more btn"
-				href="https://github.com/apriliandi246">
-				<svg
-					fill="none"
-					width="25px"
-					height="25px"
-					viewBox="0 0 19 18"
-					xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M9.22851 0C4.12976 0 0 4.13206 0 9.22851C0 13.3067 2.64397 16.7651 6.30999 17.9841C6.77142 18.071 6.94061 17.7856 6.94061 17.5403C6.94061 17.3211 6.93292 16.7405 6.92907 15.9715C4.36201 16.5283 3.8206 14.7333 3.8206 14.7333C3.40071 13.6682 2.79393 13.3836 2.79393 13.3836C1.95798 12.8115 2.85853 12.823 2.85853 12.823C3.78523 12.8876 4.27203 13.7735 4.27203 13.7735C5.09491 15.1847 6.43227 14.7771 6.95983 14.5411C7.04289 13.9443 7.28053 13.5375 7.54431 13.3067C5.49481 13.076 3.34072 12.2824 3.34072 8.74632C3.34072 7.73887 3.69833 6.916 4.29049 6.27C4.18667 6.03698 3.8752 5.09875 4.37124 3.82752C4.37124 3.82752 5.14412 3.57989 6.90908 4.77345C7.64736 4.56811 8.43178 4.4666 9.2162 4.46198C10.0006 4.4666 10.7851 4.56811 11.5233 4.77345C13.2767 3.57989 14.0496 3.82752 14.0496 3.82752C14.5457 5.09875 14.2342 6.03698 14.1419 6.27C14.7302 6.916 15.0878 7.73887 15.0878 8.74632C15.0878 12.2916 12.9307 13.0722 10.8773 13.299C11.2003 13.5759 11.5003 14.1419 11.5003 15.0063C11.5003 16.2414 11.4887 17.2335 11.4887 17.5334C11.4887 17.7756 11.6502 18.064 12.1232 17.9718C15.8154 16.7613 18.457 13.3006 18.457 9.22851C18.457 4.13206 14.325 0 9.22851 0Z"
-						fill="#ECF8FF" />
-				</svg>
-				More projects
 			</a>
 		</div>
 
 		<footer class="footer mt-footer">
-	<div class="footer__description">
-		<p class="footer__design-by-wrapper">
-			UI Design by
-			<a target="_blank" href="https://rw.codes" class="footer__design-by">
-				Ryan Warner.
-			</a>
-		</p>
+			<div class="footer__description">
+				<p class="footer__design-by-wrapper">
+					UI Design by
+					<a target="_blank" href="https://rw.codes" class="footer__design-by">
+						Ryan Warner.
+					</a>
+				</p>
 
-		<div class="footer__tech">
-			Built with <span class="framework">no framework</span>. Hosted on
-			<span class="hosted">Netlify</span>.
-		</div>
-	</div>
+				<div class="footer__tech">
+					Built with <span class="framework">no framework</span>. Hosted on
+					<span class="hosted">Netlify</span>.
+				</div>
+			</div>
 
-	<div class="footer__social-media">
-		<a
-			target="_blank"
-			class="footer__social-media-wrapper"
-			href="https://twitter.com/calon_jenazah__"
-		>
-			<svg
-				fill="none"
-				width="25px"
-				height="25px"
-				viewBox="0 0 20 16"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M19.6894 1.88235C18.9647 2.21176 18.1835 2.42824 17.3741 2.53176C18.2024 2.03294 18.8424 1.24235 19.1435 0.291765C18.3624 0.762353 17.4965 1.09176 16.5835 1.28C15.84 0.470588 14.7953 0 13.6094 0C11.3976 0 9.59059 1.80706 9.59059 4.03765C9.59059 4.35765 9.62823 4.66824 9.69412 4.96C6.34353 4.79059 3.36 3.18118 1.37412 0.743529C1.02588 1.33647 0.828235 2.03294 0.828235 2.76706C0.828235 4.16941 1.53412 5.41176 2.62588 6.11765C1.95765 6.11765 1.33647 5.92941 0.790588 5.64706C0.790588 5.64706 0.790588 5.64706 0.790588 5.67529C0.790588 7.63294 2.18353 9.27059 4.02823 9.63765C3.68941 9.73176 3.33176 9.77882 2.96471 9.77882C2.71059 9.77882 2.45647 9.75059 2.21176 9.70353C2.72 11.2941 4.19765 12.48 5.97647 12.5082C4.60235 13.6 2.86118 14.24 0.96 14.24C0.64 14.24 0.32 14.2212 0 14.1835C1.78824 15.3318 3.91529 16 6.19294 16C13.6094 16 17.6847 9.84471 17.6847 4.50824C17.6847 4.32941 17.6847 4.16 17.6753 3.98118C18.4659 3.41647 19.1435 2.70118 19.6894 1.88235Z"
-					fill="#ECF8FF"
-				/>
-			</svg>
-		</a>
+			<div class="footer__social-media">
+				<a
+					target="_blank"
+					class="footer__social-media-wrapper"
+					href="https://github.com/apriliandi246">
+					<svg
+						fill="none"
+						width="25px"
+						height="25px"
+						viewBox="0 0 19 18"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M9.22851 0C4.12976 0 0 4.13206 0 9.22851C0 13.3067 2.64397 16.7651 6.30999 17.9841C6.77142 18.071 6.94061 17.7856 6.94061 17.5403C6.94061 17.3211 6.93292 16.7405 6.92907 15.9715C4.36201 16.5283 3.8206 14.7333 3.8206 14.7333C3.40071 13.6682 2.79393 13.3836 2.79393 13.3836C1.95798 12.8115 2.85853 12.823 2.85853 12.823C3.78523 12.8876 4.27203 13.7735 4.27203 13.7735C5.09491 15.1847 6.43227 14.7771 6.95983 14.5411C7.04289 13.9443 7.28053 13.5375 7.54431 13.3067C5.49481 13.076 3.34072 12.2824 3.34072 8.74632C3.34072 7.73887 3.69833 6.916 4.29049 6.27C4.18667 6.03698 3.8752 5.09875 4.37124 3.82752C4.37124 3.82752 5.14412 3.57989 6.90908 4.77345C7.64736 4.56811 8.43178 4.4666 9.2162 4.46198C10.0006 4.4666 10.7851 4.56811 11.5233 4.77345C13.2767 3.57989 14.0496 3.82752 14.0496 3.82752C14.5457 5.09875 14.2342 6.03698 14.1419 6.27C14.7302 6.916 15.0878 7.73887 15.0878 8.74632C15.0878 12.2916 12.9307 13.0722 10.8773 13.299C11.2003 13.5759 11.5003 14.1419 11.5003 15.0063C11.5003 16.2414 11.4887 17.2335 11.4887 17.5334C11.4887 17.7756 11.6502 18.064 12.1232 17.9718C15.8154 16.7613 18.457 13.3006 18.457 9.22851C18.457 4.13206 14.325 0 9.22851 0Z"
+							fill="#ECF8FF" />
+					</svg>
+				</a>
+			</div>
+		</footer>
+		<script defer>
+			const currentRoute = location.pathname;
+			const classActiveMenu = "navbar__menu--active";
 
-		<a
-			target="_blank"
-			class="footer__social-media-wrapper"
-			href="https://github.com/apriliandi246"
-		>
-			<svg
-				fill="none"
-				width="25px"
-				height="25px"
-				viewBox="0 0 19 18"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M9.22851 0C4.12976 0 0 4.13206 0 9.22851C0 13.3067 2.64397 16.7651 6.30999 17.9841C6.77142 18.071 6.94061 17.7856 6.94061 17.5403C6.94061 17.3211 6.93292 16.7405 6.92907 15.9715C4.36201 16.5283 3.8206 14.7333 3.8206 14.7333C3.40071 13.6682 2.79393 13.3836 2.79393 13.3836C1.95798 12.8115 2.85853 12.823 2.85853 12.823C3.78523 12.8876 4.27203 13.7735 4.27203 13.7735C5.09491 15.1847 6.43227 14.7771 6.95983 14.5411C7.04289 13.9443 7.28053 13.5375 7.54431 13.3067C5.49481 13.076 3.34072 12.2824 3.34072 8.74632C3.34072 7.73887 3.69833 6.916 4.29049 6.27C4.18667 6.03698 3.8752 5.09875 4.37124 3.82752C4.37124 3.82752 5.14412 3.57989 6.90908 4.77345C7.64736 4.56811 8.43178 4.4666 9.2162 4.46198C10.0006 4.4666 10.7851 4.56811 11.5233 4.77345C13.2767 3.57989 14.0496 3.82752 14.0496 3.82752C14.5457 5.09875 14.2342 6.03698 14.1419 6.27C14.7302 6.916 15.0878 7.73887 15.0878 8.74632C15.0878 12.2916 12.9307 13.0722 10.8773 13.299C11.2003 13.5759 11.5003 14.1419 11.5003 15.0063C11.5003 16.2414 11.4887 17.2335 11.4887 17.5334C11.4887 17.7756 11.6502 18.064 12.1232 17.9718C15.8154 16.7613 18.457 13.3006 18.457 9.22851C18.457 4.13206 14.325 0 9.22851 0Z"
-					fill="#ECF8FF"
-				/>
-			</svg>
-		</a>
-	</div>
-</footer>
+			if (currentRoute === "/index.html" || currentRoute === "/") {
+				document.getElementById("navbar-home").classList.add(classActiveMenu);
+			}
 
-		<script>
-	const currentRoute = location.pathname;
-	const classActiveMenu = "navbar__menu--active";
+			if (currentRoute === "/about/") {
+				document.getElementById("navbar-about").classList.add(classActiveMenu);
+			}
 
-	if (currentRoute === "/index.html" || currentRoute === "/") {
-		document.getElementById("navbar-home").classList.add(classActiveMenu);
-	}
+			if (currentRoute === "/blogs/" || currentRoute.match(/blogs/) !== null) {
+				document.getElementById("navbar-blogs").classList.add(classActiveMenu);
+			}
 
-	if (currentRoute === "/about.html") {
-		document.getElementById("navbar-about").classList.add(classActiveMenu);
-	}
-
-	if (currentRoute === "/blogs.html" || currentRoute.match(/blogs/) !== null) {
-		document.getElementById("navbar-blogs").classList.add(classActiveMenu);
-	}
-
-	if (currentRoute === "/contact.html") {
-		document.getElementById("navbar-contact").classList.add(classActiveMenu);
-	}
-</script>
-
+			if (currentRoute === "/blog/" || currentRoute.match(/blog/) !== null) {
+				document.getElementById("navbar-blogs").classList.add(classActiveMenu);
+			}
+		</script>
 	</div>
 </body>
 

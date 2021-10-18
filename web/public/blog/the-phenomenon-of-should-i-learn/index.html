@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../css/main.css" />
+	<title>The Phenomenon of "SHOULD I LEARN"</title>
+</head>
+
+<body>
+	<div class="container">
+		<nav class="navbar">
+	<div class="navbar__menus">
+		<a id="navbar-home" href="/" class="navbar__menu"> Home </a>
+		<a href="../../about" class="navbar__menu" id="navbar-about">About</a>
+		<a href="../../blogs" class="navbar__menu" id="navbar-blogs">Blogs</a>
+	</div>
+</nav>
+
+		<h1 class="head-title">The Phenomenon of "SHOULD I LEARN"</h1>
+
+		<p class="blog-words">
+			Maybe you think with this blog title, "WHAT'S WRONG WITH THIS
+			PHENOMENON". Yes, that's not wrong but many people do this phenomenon
+			all the time. For example, if a new Javascript framework or library
+			comes out and programmers in some groups or some forum say "SHOULD I
+			LEARN THIS".
+		</p>
+
+		<p class="blog-words">
+			If you just use that new framework or library just because it's very
+			trending and a lot of people talk about it, I think why not change your
+			perspective about this phenomenon. For example, why not try to visit the
+			documentation and read about that framework or library. If you have
+			time, find out why the author of the framework or library makes this
+			thing, what problem the author solves, or even the philosophy behind
+			this framework or library.
+		</p>
+
+		<p class="blog-words">
+			For example, when I wanna learn another Javascript frontend framework,
+			and that framework gives me a lot of productivity and the performance is
+			also very good. Finally, I decided to choose Svelte, and Svelte solve my
+			problem about productivity and performance.
+		</p>
+
+		<p class="blog-words">
+			On the productivity side, Svelte gives me a lot of productivity while I
+			am coding. For example, Svelte has a lot of features, for example,
+			built-in transition, animation, state management, and more. Even Svelte
+			give me some useful utilities that help me a lot, for example, scoped
+			style, unused CSS code, and more.
+		</p>
+
+		<p class="blog-words">
+			On the performant side, Svelte is not inferior to other Javascript
+			frontend frameworks or even Svelte has better performance in some
+			situations. And I'm also doing research on why Rich Harris (Svelte's
+			author) makes Svelte, what problem he solves, and more.
+		</p>
+
+		<p class="blog-words">
+			Yeahh, that is what I think about this phenomenon.... Thanks
+		</p>
+
+		<footer class="footer mt-footer">
+	<div class="footer__description">
+		<p class="footer__design-by-wrapper">
+			UI Design by
+			<a target="_blank" href="https://rw.codes" class="footer__design-by">
+				Ryan Warner.
+			</a>
+		</p>
+
+		<div class="footer__tech">
+			Built with <span class="framework">no framework</span>. Hosted on
+			<span class="hosted">Netlify</span>.
+		</div>
+	</div>
+
+	<div class="footer__social-media">
+		<a
+			target="_blank"
+			class="footer__social-media-wrapper"
+			href="https://github.com/apriliandi246">
+			<svg
+				fill="none"
+				width="25px"
+				height="25px"
+				viewBox="0 0 19 18"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M9.22851 0C4.12976 0 0 4.13206 0 9.22851C0 13.3067 2.64397 16.7651 6.30999 17.9841C6.77142 18.071 6.94061 17.7856 6.94061 17.5403C6.94061 17.3211 6.93292 16.7405 6.92907 15.9715C4.36201 16.5283 3.8206 14.7333 3.8206 14.7333C3.40071 13.6682 2.79393 13.3836 2.79393 13.3836C1.95798 12.8115 2.85853 12.823 2.85853 12.823C3.78523 12.8876 4.27203 13.7735 4.27203 13.7735C5.09491 15.1847 6.43227 14.7771 6.95983 14.5411C7.04289 13.9443 7.28053 13.5375 7.54431 13.3067C5.49481 13.076 3.34072 12.2824 3.34072 8.74632C3.34072 7.73887 3.69833 6.916 4.29049 6.27C4.18667 6.03698 3.8752 5.09875 4.37124 3.82752C4.37124 3.82752 5.14412 3.57989 6.90908 4.77345C7.64736 4.56811 8.43178 4.4666 9.2162 4.46198C10.0006 4.4666 10.7851 4.56811 11.5233 4.77345C13.2767 3.57989 14.0496 3.82752 14.0496 3.82752C14.5457 5.09875 14.2342 6.03698 14.1419 6.27C14.7302 6.916 15.0878 7.73887 15.0878 8.74632C15.0878 12.2916 12.9307 13.0722 10.8773 13.299C11.2003 13.5759 11.5003 14.1419 11.5003 15.0063C11.5003 16.2414 11.4887 17.2335 11.4887 17.5334C11.4887 17.7756 11.6502 18.064 12.1232 17.9718C15.8154 16.7613 18.457 13.3006 18.457 9.22851C18.457 4.13206 14.325 0 9.22851 0Z"
+					fill="#ECF8FF" />
+			</svg>
+		</a>
+	</div>
+</footer>
+	</div>
+
+	<script defer>
+	const currentRoute = location.pathname;
+	const classActiveMenu = "navbar__menu--active";
+
+	if (currentRoute === "/" || currentRoute === "/") {
+		document.getElementById("navbar-home").classList.add(classActiveMenu);
+	}
+
+	if (currentRoute === "/about/") {
+		document.getElementById("navbar-about").classList.add(classActiveMenu);
+	}
+
+	if (currentRoute === "/blogs/" || currentRoute.match(/blogs/) !== null) {
+		document.getElementById("navbar-blogs").classList.add(classActiveMenu);
+	}
+
+	if (currentRoute === "/blog/" || currentRoute.match(/blog/) !== null) {
+		document.getElementById("navbar-blogs").classList.add(classActiveMenu);
+	}
+</script>
+</body>
+
+</html>
