@@ -7,7 +7,7 @@
 		"start": "cd web && sergey",
 		"dev": "cd web && sergey --watch",
 		"sass": "sass --watch scss/main.scss web/css/main.css --style compressed --no-source-map",
-		"html-minify": "html-minifier web/public src web/dist dist --file-ext html --remove-comments --collapse-whitespace --minify-js true --minify-css true"
+		"html-minify": "html-minifier --input-dir ./web/public --output-dir ./web/public --file-ext html --remove-comments --collapse-whitespace --minify-js true --minify-css true"
 	},
 	"keywords": [],
 	"author": "",
